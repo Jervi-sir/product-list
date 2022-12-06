@@ -3,6 +3,7 @@ import Card from './components/Card';
 import Header from './components/Header';
 import { Helmet } from 'react-helmet';
 import Data from './data.json';
+import './styles/MediaQuery.scss';
 
 function App() {
   return (
