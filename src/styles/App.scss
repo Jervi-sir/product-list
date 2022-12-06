@@ -1,0 +1,21 @@
+
+.results {
+  padding: 20px;
+  h1 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 30px;
+    
+  }
+}
+
+
+footer {
+  text-align: center;
+}
