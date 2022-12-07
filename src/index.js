@@ -4,7 +4,8 @@ import './styles/index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore"; 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const firebaseConfig = {
@@ -18,8 +19,13 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-console.log(analytics);
+
+const db = getFirestore(app);
+const querySnapshot = await getDocs(collection(db, "products"));
+
+querySnapshot.forEach((doc) => {
+  console.log(`${doc.id} => ${doc.data()}`);
+});
 
 root.render(
   <React.StrictMode>

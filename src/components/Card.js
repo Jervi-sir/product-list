@@ -3,7 +3,7 @@ import '../styles/Card.scss';
 
 function Card(props) {
   return (
-    <div class="card" className='card'>
+    <div className="card" class="card" >
       <div class="preview">
         <img src={product} alt="" />
       </div>

@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet';
 import Data from './data.json';
 import './styles/MediaQuery.scss';
 
+
 function App() {
   return (
   <div className="App">
@@ -16,9 +17,9 @@ function App() {
       <h1>Perfume</h1>
       <div class="list">
         {
-          Data.map( record => {
+          Data.map( (record,index) => {
             return(
-              <Card name={record.name} price="9000"/>
+              <Card name={record.name} price="9000" id={index}/>
             )
           })
         }
