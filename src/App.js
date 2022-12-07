@@ -9,7 +9,7 @@ function App() {
   return (
   <div className="App">
     <Helmet>
-        <title>Pruclit | Home</title>
+        <title>Pructel | Home</title>
     </Helmet>
     <Header />
     <div class="results">
