@@ -6,12 +6,17 @@
     font-size: 25px;
     line-height: 29px;
     color: #000000;
+    text-align: center;
   }
   .list {
     display: grid;
     grid-template-columns: 1fr 1fr ;
     gap: 30px;
-    
+  }
+  .list-perfume {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 }
 

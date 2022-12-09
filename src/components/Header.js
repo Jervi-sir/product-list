@@ -2,7 +2,7 @@ import logo from '../images/logo.svg';
 import search from '../images/search.svg';
 import '../styles/Header.scss';
 
-function Header() {
+function Header(props) {
   return (
   <div className="header">
     <div class="top-band" >
@@ -17,9 +17,7 @@ function Header() {
       </div>
       <div class="categrories">
         <button class="category active">perfume</button>
-        <button class="category">cosutme</button>
-        <button class="category">something</button>
-        <button class="category">shoes</button>
+        <button class="category">Offer</button>
       </div>
     </div>
   </div>

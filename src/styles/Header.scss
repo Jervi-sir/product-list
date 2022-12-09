@@ -39,7 +39,8 @@
   .categrories {
     display: flex;
     margin-top: 20px;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
 
     .category {
       background: #000000;
